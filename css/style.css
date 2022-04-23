@@ -1,0 +1,107 @@
+#body-container{
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 300px auto;
+    height: 800px;
+}
+#nav-container{
+    background-color: whitesmoke;
+    border: 1px solid hsl(233, 47%, 7%);
+    padding: 5px 20px 5px 0px;
+    border-left: none;
+}
+#content{
+    background-color: whitesmoke;
+    border: 1px solid hsl(233, 47%, 7%);;
+}
+#main-doc{
+    padding: 20px;
+}
+.main-section{
+    margin-bottom: 50px;
+}
+#navbar{
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: auto;
+}
+#navbar header{
+    margin: 10px 5px 5px 30px;
+}
+
+#navlist{
+    list-style-type: none;
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+}
+#navlist li{
+    text-align: center;
+    height: 8%;
+    width: 100%;
+    padding: 15px 5px 5px 5px;
+    border: 1px solid black;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+}
+.nav-item{
+    font-size: 25px;
+}
+
+code{
+    display: block;
+    background-color: hsl(244, 38%, 16%);
+    color: whitesmoke;
+    padding: 20px 10px 10px 10px;
+    width: 70%;
+    height: auto;
+    border-radius: 5px;
+}
+.section-headings{
+    color: hsl(244, 38%, 16%);
+}
+
+
+@media screen and (max-width:600px){
+
+
+#body-container{
+    grid-template-areas: 
+    "top"
+    "bottom";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    max-width: 100%;
+    
+    
+}
+
+#nav-container{
+    grid-area: top;
+}
+
+#content{
+
+    grid-area: bottom;
+
+}
+
+
+#navbar{
+    position: relative;
+    width: 100%;
+    padding-left: 5px;
+    
+}
+#navlist li{
+    border-left:none;
+}
+
+}
