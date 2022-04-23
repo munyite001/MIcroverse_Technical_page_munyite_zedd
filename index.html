@@ -21,7 +21,170 @@
     - The freeCodeCamp Team
 
     -->
-<p>Hello World. We are software developers</p>
+    <div id="body-container">
+      <div id="nav-container">
+          <nav id="navbar">
+              <header><h2 class="section-headings">PHP Documentation</h2></header>
+              <ul id="navlist">
+                  <a href="#introduction" class="nav-link"><li class="nav-item">Introduction</li></a>
+                  
+                  <a href="#printing-stuff" class="nav-link"><li class="nav-item">Printing Stuff on Screen</li></a>
+                  
+                  <a href="#variables" class="nav-link"><li class="nav-item">PHP Variables</li></a>
+                  
+                  <a href="#comments" class="nav-link"><li class="nav-item">Comments in PHP</li></a>
+                  
+                  <a href="#datatypes" class="nav-link"><li class="nav-item">Data-Types</li></a>
+                  
+                  
+              </ul>
+          </nav>
+      </div>
+      <div id="content">
+          <main id="main-doc">
+          <section class="main-section" id="introduction">
+              <h2 class="section-headings">Introduction</h2>
+              <p>
+                  PHP (a recursive initialism for PHP: Hypertext Preprocessor) 
+                  is an open-source server-side scripting language that can be embedded
+                  into HTML to build web applications and dynamic websites.
+              </p>
+              <p>To embedd php into your websites, we use the php tags in the body of your html
+                  document. The php code then goes in between the tags like shown below.
+              </p>
+              <code>
+                  // start of PHP code
+                  <br>
+                  &lt?php
+                  <br>
+                  // PHP code goes here
+                  <br>
+                  ?&gt
+                  <br>
+                  // end of PHP 
+                  <br>
+              </code>
+
+          </section>
+          <section class="main-section" id="printing-stuff">
+              <h2 class="section-headings">Printing Stuff on Screen</h2>
+              <p>To display things on screen, we use the "echo" command.
+                  We then enclose whatever it is we want to print on scrin in quotes.
+              </p>
+              <code>
+                  &lt?php
+                  <br>
+                  echo "Hello World!";
+                  <br>
+                  ?&gt
+                  <br>
+              </code>
+              <p>We can also use the print function to display items out on screen in php.
+                  Though it is not widely used.
+                  The ptint function works like shown below.
+              </p>
+              <code>
+                  &lt?php
+                  <br>
+                  print "Hello World!";
+                  <br>
+                  ?&gt
+                  <br>
+              </code>
+              
+              
+          </section>
+          <section class="main-section" id="variables">
+              <h2 class="section-headings">Php Variables</h2>
+              <p>
+                  Variables are containers allow us to store data, 
+                  which we can then reference in our programs
+                  To declare a variable in php, we use the "$" sign,
+                  followed by the variable name then we equate them to the 
+                  variable value like shown below.</p>
+                  <code>
+                      &lt?php
+                      <br>
+                      $my_var = 21;
+                      <br>
+                      ?&gt
+                  </code>
+              <p>
+                  After declaring a variable, we can then embed it in our program by
+                  by referencing the dollar-sign "$" followed by the variable name we
+                  used. 
+              </p>
+              <code>
+                  &lt?php
+                  <br>
+                  echo "MY age is $my_var"
+                  <br>
+                  ?&gt
+              </code>
+              <p>This will print out</p>
+              <code>"My age is 21"</code>
+          </section>
+          <section class="main-section" id="comments">
+              <h2 class="section-headings">Comments</h2>
+              <p>
+                  Comments in php, allow us to give description to our lines of code.
+                  This is because comments are not executed by the IDE.
+                  In php, there are 2 types of comments: single-line comments,
+                  and multi-lines comments.
+              </p>
+              <p>
+                  Single line comments, comment out just a single line.
+                  Single line comments are used as shown below
+              </p>
+              <code>// This is a single line comment</code>
+             <p>
+                  Multi-line comments allow us to comment out multiple lines of code in php.
+                  Multi-line comments in php are used as shown below. 
+             </p>
+              <code>
+                  /*
+                  <br>
+                  This block of code 
+                  <br>
+                  will not be executed
+                  <br>
+                  as it has been commented out 
+                  <br>
+                  */
+              </code>
+          </section>
+          <section class="main-section" id="datatypes">
+              <h2 class="section-headings">Data-Types</h2>
+              <p>
+                  PHP has support for some major datatypes.
+                  This include:
+                  <ul>
+                      <li>String</li>
+                      <li>Integers</li>
+                      <li>Boolean</li>
+                      <li>Float</li>
+                      <li>Special symbols</li>
+                  </ul>
+              </p>
+              <code>
+                  $phrase = "This is a string data-type"
+                  <br>
+                  $AGE = 21 // This is an integer data-type
+                  <br>
+                  $Fact = True/False // This is a boolean data-type
+                  <br>
+                  $Height = 5.8 // This is a float data-type
+              </code>
+              <p>The data-types above, are all of the data-types supported
+                  within the PHP language.
+                  Special symbols like underscore "_", Commas ",",
+                  ecxlamation marks "!" etc. are also supported in the PHP 
+                  language. 
+              </p>
+          </section>
+      </main>
+      </div>
+  </div>
     <script  src="js/index.js"></script>
   </body>
 </html>
